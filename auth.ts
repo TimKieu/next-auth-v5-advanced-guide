@@ -18,6 +18,12 @@ export const {
   pages: {
     signIn: "/auth/login",
     error: "/auth/error",
+    // trustHost: true
+    // signIn: '/auth/signin',
+    // signOut: '/auth/signout',
+    // error: '/auth/error',
+    // verifyRequest: '/auth/verify-request',
+    // newUser: '/auth/new-user'
   },
   events: {
     async linkAccount({ user }) {

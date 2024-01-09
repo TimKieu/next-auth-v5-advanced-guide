@@ -1,4 +1,8 @@
-import crypto from "crypto";
+//NOT use this
+// import crypto from "crypto";
+
+//Use this // https://developer.mozilla.org/en-US/docs/Web/API/Crypto/subtle
+
 import { v4 as uuidv4 } from "uuid";
 
 import { db } from "@/lib/db";
@@ -7,7 +11,9 @@ import { getPasswordResetTokenByEmail } from "@/data/password-reset-token";
 import { getTwoFactorTokenByEmail } from "@/data/two-factor-token";
 
 export const generateTwoFactorToken = async (email: string) => {
-  const token = crypto.randomInt(100_000, 1_000_000).toString();
+  //const token = crypto.randomInt(100_000, 1_000_000).toString();
+  const token = crypto.getRandomValues(new Uint8Array(12)).toString();
+
   const expires = new Date(new Date().getTime() + 5 * 60 * 1000);
 
   const existingToken = await getTwoFactorTokenByEmail(email);

@@ -1,0 +1,44 @@
+
+NEXTAUTH_URL=http://localhost:3000/api/auth
+NEXTAUTH_SECRET=asdfkjasdlfaskdfj # Linux: `openssl rand -hex 32` or go to https://generate-secret.now.sh/32
+
+VERCEL_URL=http://localhost:3000
+AUTH_SECRET=asdfkjasdlfaskdfj
+
+
+APPLE_ID=
+APPLE_TEAM_ID=
+APPLE_PRIVATE_KEY=
+APPLE_KEY_ID=
+
+AUTH0_ID=
+AUTH0_SECRET=
+AUTH0_ISSUER=
+
+FACEBOOK_ID=
+FACEBOOK_SECRET=
+
+
+# AUTH.js
+GOOGLE_ID=1093598178350-o5pq1t4nh2i82d3nihtut10nnf7p2qhe.apps.googleusercontent.com
+GOOGLE_SECRET=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
+
+GITHUB_ID=Iv1.d1ad5f7c8b91f9e8
+GITHUB_SECRET=1658a65edcd138a5aa686d573afdade171eb921d
+
+TWITTER_ID=
+TWITTER_SECRET=
+
+EMAIL_SERVER=smtp://ant@antaja.com:eopu zxhu dydl jfge@smtp.gmail.com:587
+
+
+EMAIL_SERVER_USER='ant@antaja.com'
+EMAIL_SERVER_PASSWORD='eopu zxhu dydl jfge'
+EMAIL_SERVER_HOST='smtp.gmail.com'
+EMAIL_SERVER_PORT=587
+EMAIL_FROM=ant@antaja
+
+#DATABASE_URL=sqlite://localhost/:memory:?synchronize=true
+
+DATABASE_URL="postgresql://ant:pR2KfdtOc9mv@ep-super-darkness-42474027-pooler.ap-southeast-1.aws.neon.tech/doop-club-demo?sslmode=require&pgbouncer=true"
+DIRECT_URL="postgresql://ant:pR2KfdtOc9mv@ep-super-darkness-42474027.ap-southeast-1.aws.neon.tech/doop-club-demo?sslmode=require"
