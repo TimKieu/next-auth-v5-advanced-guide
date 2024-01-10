@@ -8,6 +8,7 @@ import { LoginSchema } from "@/schemas";
 import { getUserByEmail } from "@/data/user";
 
 export default {
+  secret: process.env.NEXTAUTH_SECRET,
   providers: [
     Google({
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -39,4 +40,5 @@ export default {
       }
     })
   ],
-} satisfies NextAuthConfig
+  
+} satisfies NextAuthConfig;
